@@ -7,8 +7,7 @@
 
 A "Digital Twin" reliability console that monitors California's power grid for stability risks. This project ingests real-time telemetry from CAISO, calculates physics-based stress indicators (like Ramp Rates and Net Load), and uses **Unsupervised Machine Learning (Isolation Forests)** to detect operational anomalies.
 
-![Dashboard Demo](assets/dashboard_screenshot.png)
-*(Note: Add a screenshot of your dashboard here)*
+![Dashboard Demo](assets/CAISO-Dashboard-2.png)
 
 ## 🚀 The Objective
 California's energy transition has created the **"Duck Curve"**—a phenomenon where solar generation drops rapidly at sunset while consumer demand spikes. This creates extreme "Ramp Events" that threaten grid frequency.
