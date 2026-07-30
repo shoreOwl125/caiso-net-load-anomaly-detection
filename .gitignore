@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data (Never commit data to Git)
+data/
+*.csv
+*.pkl
+
+# OS
+.DS_Store
+
+# Secrets (Just in case)
+.env
+aws_credentials.txt

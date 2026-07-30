@@ -1,0 +1,8 @@
+streamlit
+pandas
+boto3
+altair
+scikit-learn
+gridstatus
+matplotlib
+s3fs
