@@ -5,14 +5,14 @@ from io import StringIO
 import time
 
 # --- CONFIGURATION ---
-# Replace this with the EXACT name of the bucket for this project
+# Add S3 bucket holding your data lake for project
 BUCKET_NAME = "caiso-reliability-lake" 
 
 def fetch_and_upload_data():
     print(" Starting Grid Data Ingestion")
 
     # 1. Initialize the CAISO Connection
-    # This acts like opening a web browser to the CAISO portal
+    # Use gridstatus API to access CAISO portal
     iso = gridstatus.CAISO()
 
     # 2. Define the 'Stress Test' Period
@@ -29,7 +29,7 @@ def fetch_and_upload_data():
     df_load = iso.get_load(start=start_date, end=end_date)
     
     # 4. Fetch FUEL MIX (Generation Supply)
-    # This tells us HOW that power was made (Solar, Wind, Gas, Nuclear).
+    # This tells us how that power was made (Solar, Wind, Gas, Nuclear).
     print(" Fetching Fuel Mix Data")
     df_mix = iso.get_fuel_mix(start=start_date, end=end_date)
 

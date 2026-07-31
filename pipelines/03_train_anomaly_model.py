@@ -27,7 +27,7 @@ def train_and_score():
     print(f" Training on features: {feature_cols}")
     
     # --- 3. PREPROCESSING (NORMALIZATION) ---
-    # Critical Note: Isolation Forests are distance-dependent. 
+    # Note: Isolation Forests are distance-dependent. 
     # Net_Load (~20,000 MW) dwarfs Solar_Volatility (~50). 
     # We use StandardScaler to scale them to Mean=0, Std=1 so the model treats them equally.
     scaler = StandardScaler()
